@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Vite App</title>
+  </head>
+  <body>
+
+    <header class="header contenido">
+      <div class="header__container">
+       <div class="barra">
+        <div class="logo">
+          <img src="./img/logo.svg" alt="logo" class="logo__img">
+        </div>
+
+        <nav class="navegacion">
+          <a href="#" class="navegacion__link">Collections</a>
+          <a href="#" class="navegacion__link">Men</a>
+          <a href="#" class="navegacion__link">Women</a>
+          <a href="#" class="navegacion__link">About</a>
+          <a href="#" class="navegacion__link">Contact</a>
+        </nav>
+       </div>
+
+        <div class="shoppin-card">
+          <div class="card">
+            <img src="./img/icon-cart.svg" alt="card" class="card__img">
+          </div>
+          <div class="user">
+            <img src="./img/image-avatar.png" alt="user" class="user__img">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="sneakers">
+      <div class="sneakers__container contenido">
+        <div class="sneakers_grid">
+          <div class="sneakers__producto">
+            <div class="producto">
+              <img src="./img/image-product-1.jpg" alt="producto" class="producto__img">
+            </div>
+            <div class="modelo">
+              <div class="modelos">
+                <img src="./img/image-product-1.jpg" alt="">
+              </div>
+              <div class="modelos">
+                <img src="./img/image-product-2.jpg" alt="">
+              </div>
+              <div class="modelos">
+                <img src="./img/image-product-3.jpg" alt="">
+              </div>
+              <div class="modelos">
+                <img src="./img/image-product-4.jpg" alt="">
+              </div>
+            </div>
+          </div>
+  
+          <div class="sneakers__info">
+            <h4 class="sneakers__subtitle">Sneaker company</h4>
+            <h1 class="title">Fall Limited Edition Sneakers</h1>
+            <p class="sneakers__parrafo">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer solo, they'll withstand everything the weather can offer.</p>
+  
+            <div class="sneakers__precios">
+              <div class="precio">
+                <p class="descuento">$125.00</p>
+                <p class="porciento">50%</p>
+              </div>
+              <p class="precio__actual">$250.00</p>
+            </div>
+  
+            <div class="addtocart">
+              <div class="addtocart__contador">
+                <p class="addtocart__style">-</p>
+                <p class="numero">0</p>
+                <p class="addtocart__style">+</p>
+              </div>
+              <button class="addtocart__boton"><img src="./img/icon-cart.svg" alt=""> Add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="modal">
+      <div class="modal__container contenido">
+        <div class="modal__close">
+          <img src="./img/icon-close.svg" alt="close" class="close">
+        </div>
+
+        <div class="modal__div">
+          <img src="./img/image-product-1.jpg" alt="" class="img__modal">
+        </div>
+
+        <div class="modal__grid">
+          <div class="modal__modelos">
+            <img src="./img/image-product-1.jpg" alt="">
+          </div>
+          <div class="modal__modelos">
+            <img src="./img/image-product-2.jpg" alt="">
+          </div>
+          <div class="modal__modelos">
+            <img src="./img/image-product-3.jpg" alt="">
+          </div>
+          <div class="modal__modelos">
+            <img src="./img/image-product-4.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

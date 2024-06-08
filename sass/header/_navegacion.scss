@@ -1,0 +1,51 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+
+.header{
+    padding: 30px 0;
+    border-bottom: solid 1px v.$borde;
+
+    .header__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .barra{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            .navegacion{
+                @include m.telefono{
+                    display: none;
+                }
+
+                .navegacion__link{
+                    color: v.$gris;
+                    font-weight: 300;
+                    font-size: 18px;
+                    padding: 10px;
+
+                    &:hover{
+                        border: solid 1px v.$verde;
+                        border-radius: 8px;
+                        color:v.$verde ;
+                    }
+                }
+            }
+        }
+
+        .shoppin-card{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            .user{
+                .user__img{
+                    width: 40px;
+                }
+            }
+        }
+    }
+}
